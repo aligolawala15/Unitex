@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UniteX — the student network that actually does something</title>
+<meta name="description" content="UniteX is a student social platform: a live feed, communities, learning roadmaps, events, mentor networking, messaging and gamified achievements.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23ff5a45'/><text x='50' y='72' font-size='62' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>U</text></svg>">
+</head>
+<body>
+
+<div class="boot" id="boot">
+  <div class="boot-inner">
+    <div class="boot-mark">U</div>
+    <div class="boot-text" id="bootText">Connecting to UniteX…</div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#/home">
+      <span class="brand-mark">U</span>
+      <span>
+        <span class="brand-name">Unite<em>X</em></span>
+        <span class="brand-sub">Student Network</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation"></nav>
+    <div class="side-foot" id="sideFoot"></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="menu-btn icon-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+      <div class="crumb" id="crumb">UniteX / <b>Home</b></div>
+      <div class="search-wrap">
+        <span class="mag">⌕</span>
+        <input class="search-input" id="globalSearch" type="search" placeholder="Search posts, people, communities…" aria-label="Search UniteX">
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="msgBtn" aria-label="Messages">✉<span class="dot" id="msgDot">0</span></button>
+        <button class="icon-btn" id="bellBtn" aria-label="Notifications">◔</button>
+        <button class="avatar-btn" id="meBtn">
+          <span class="av av-sm" data-accent="indigo" id="meAv">AU</span>
+          <span class="who" id="meName">Anonymous<span>3rd year · CS</span></span>
+        </button>
+      </div>
+    </header>
+    <main class="page" id="page" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toasts" aria-live="polite"></div>
+<div id="modalRoot"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
